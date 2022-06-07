@@ -13,7 +13,27 @@
     </script>
 </head>
 <body>
-
-    <input type="button" onclick="funcao1()" value="Exibir Alert">
+    <p>
+        Clique no botão para exibir a caixa de confirmação.
+    </p>
+    <button onclick="funcao1()">Clique Aqui</button>
+    <p id="demo"></p>
+    
+    <script>
+        function funcao1()
+        {
+            var x;
+            var r=confirm("Escolha um valor")
+            if (r==true)
+            {
+                x="vocẽ pressionou OK";
+            }
+            else
+            {
+                x="vocẽ pressionou Cancelar";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
 </body>
 </html>
